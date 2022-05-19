@@ -10,6 +10,11 @@ WORKDIR /root
 #更新源
 RUN apt update && apt -y upgrade
 
+####
+# 源码安装还是封装的包去安装呢？
+# 既然已经apt update了，感觉可以直接用包去安装，源码安装有些麻烦吧？可能也比较难一些。
+####
+
 #按照网络下载工具
 RUN apt -y install wget curl git
 
